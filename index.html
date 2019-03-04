@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ClsActivityMarch_4</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        var AddNumbers = {
+            startNum: 1109,
+            endNum: 119,
+            stepDownNum: 11,
+            sum: 0,
+            adder: function () {
+                for (i = this.startNum; i > this.endNum; i -= this.stepDownNum) {
+                    this.sum += i;
+                }
+                return this.sum;
+            }
+        };
+
+        document.write(AddNumbers.adder());
+
+
+    </script>
+</head>
+<body>
+    <div>Content goes here!</div>
+
+</body>
+</html>
